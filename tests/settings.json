@@ -1,0 +1,34 @@
+{
+  "timeout": 600,
+  "mode": "spim",
+  "output_filters": ["filter_spim", "filter_remove_colon_prompts"],
+  "test_suites": {
+    "tribonacci": {
+      "tests": [
+        { "desc": "n = 1",  "stdin": "tests/tribonacci_input_0.txt" },
+        { "desc": "n = 2",  "stdin": "tests/tribonacci_input_1.txt" },
+        { "desc": "n = 4",  "stdin": "tests/tribonacci_input_2.txt" },
+        { "desc": "n = 7",  "stdin": "tests/tribonacci_input_3.txt" },
+        { "desc": "n = 10", "stdin": "tests/tribonacci_input_4.txt" }
+      ]
+    },
+    "recurse": {
+      "tests": [
+        { "desc": "n = 0",  "stdin": "tests/recurse_input_0.txt" },
+        { "desc": "n = 2",  "stdin": "tests/recurse_input_1.txt" },
+        { "desc": "n = 4",  "stdin": "tests/recurse_input_2.txt" },
+        { "desc": "n = 7",  "stdin": "tests/recurse_input_3.txt" }
+      ]
+    },
+    "plusminus": {
+      "tests": [
+        { "desc": "One player",                     "stdin": "tests/playerstats_input_0.txt"},
+        { "desc": "Two players, in order",          "stdin": "tests/playerstats_input_1.txt"},
+        { "desc": "Two players, out of order",      "stdin": "tests/playerstats_input_2.txt"},
+        { "desc": "Six players",                    "stdin": "tests/playerstats_input_3.txt"},
+        { "desc": "Stop reading at DONE",           "stdin": "tests/playerstats_input_4.txt"},
+        { "desc": "100 players",                    "stdin": "tests/playerstats_input_5.txt"}
+      ]
+    }
+  }
+}

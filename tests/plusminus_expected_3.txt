@@ -1,0 +1,6 @@
+Filipowski 51
+Roach 11
+Proctor -22
+Foster -32
+Mitchell -37
+McCain -71
